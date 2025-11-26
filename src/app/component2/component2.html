@@ -1,1 +1,8 @@
-<p>component2 works!</p>
+<div class="container">
+    <h3>{{ titulo }}</h3>
+    <ul>
+        @for (i of contenido; track $index) {
+            <li><button (click)="seleccionarContenido2(i)">{{ i }}</button></li>
+        }
+    </ul>
+</div>

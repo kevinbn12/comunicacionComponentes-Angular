@@ -1,11 +1,19 @@
 <div class="navBar">
-    <img src="logoSena.png" alt="" width="110px">
+    <div class="logo">
+        <img src="logoSena.png" alt="Logo SENA" width="110px">
+    </div>
     <ul>
         <li></li>
-        <li><a><img src="home.png" alt="" width="40px" routerLink="/" routerLinkActive="activo"></a></li>
+        <li><button (click)="seleccionarContenido('home')">
+            <img src="home.png" alt="Home" width="40px">
+        </button></li>
         <hr>
-        <li><a><img src="search.png" alt="" width="40px"></a></li>
+        <li><button (click)="seleccionarContenido('search')">
+            <img src="search.png" alt="Search" width="40px">
+        </button></li>
         <hr>
-        <li><a><img src="html.png" alt="" width="40px"></a></li>
+        <li><button (click)="seleccionarContenido('html')">
+            <img src="html.png" alt="HTML" width="40px">
+        </button></li>
     </ul>
 </div>

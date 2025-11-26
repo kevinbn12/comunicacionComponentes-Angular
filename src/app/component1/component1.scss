@@ -1,29 +1,37 @@
-.navBar{
+.navBar {
     background-color: black;
-    max-width: 110px;
+    width: 110px;
     display: block;
-    height: 890px;
+    height: 100%;
     padding: 10px;
     justify-items: center;
+    margin: 0%;
+    border-right: 1px solid white;
 }
 
-.navBar ul li{
+.navBar ul li {
     margin: 30px 0px;
     justify-self: center;
-} 
+}
 
-.navBar ul li a{
+.navBar ul li button {
     cursor: pointer;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
 }
 
-.navBar ul li:hover{
-    background-color: rgb(82, 82, 82);
+.navBar ul li button span {
+    font-size: 12px;
+    color: white;
 }
 
-.activo{
-    background-color: red;
-}
-
-.activo:hover{
-    background-color: #ff3e3e;
+.navBar ul li button:hover {
+    background-color: rgb(184, 0, 0);
 }
